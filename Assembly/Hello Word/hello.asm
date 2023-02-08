@@ -12,5 +12,5 @@ _start:                     ;int _start
 
 section	.data
 
-    mess db	'Hello, world!', 0xa ; giống như string str = 'hello, word!'
+    mess db	'Hello, world!', 0xa ; string str = 'hello, word!'
     leng equ	$ - mess ; Gán độ dài chuỗi mess vào len
