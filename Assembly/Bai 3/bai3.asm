@@ -32,7 +32,7 @@ inHoa:
     jb tiepTuc ; nếu đúng thì thực hiện câu lệnh sub bl, 0x20
     cmp bl, 'z' ; sai thì thực hiện hàm tiếp tục
     ja tiepTuc
-    sub bl, 0x20 ; tronng mã ascii thì ký tự thường cộng 20 lên sẽ thành ký tự in hoa
+    sub bl, 0x20 ; tronng mã ascii thì ký tự thường cộng 0x20 lên sẽ thành ký tự in hoa
     mov [edx], bl ; gán ký tự mới đổi sang in hoa cho [edx]
 
 tiepTuc:
