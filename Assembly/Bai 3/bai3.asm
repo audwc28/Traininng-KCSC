@@ -1,7 +1,8 @@
-sectionn .data   
-sectionn .bss
+   
+section .bss
     chuoi resd 32 ; char chuoi[32]
-sectionn .text
+section .data
+section .text
     global _start
 _start:
 
