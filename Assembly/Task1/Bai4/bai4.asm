@@ -6,7 +6,7 @@ section .data
    error db 'Nhap so sai '
    len3 equ $ - error
    newnum db ' ', 10, 0 ; Lưu tổng của num1 + num2
-   output db 10 dup(0), 0
+   output db 0,0,0,0,0,0,0,0,0,0
    ; Lưu từng chữ số của tổng vào
    temp db ' ', 10, 0
 section .bss
