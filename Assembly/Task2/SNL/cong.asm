@@ -155,7 +155,7 @@ hetChuoi1:
    add byte [rcx], bl
    add byte [rcx], dl
    cmp byte [rcx], 10
-   jge lonHon10chuoi1
+   jnl lonHon10chuoi1
    add byte [rcx], 48
    mov rdx, 0
    inc rcx
@@ -185,7 +185,7 @@ hetChuoi2:
    sub al, 48
    add byte [rcx], al
    add byte [rcx], dl
-   cmp cl, 10
+   cmp byte [rcx], 10
    jge lonHon10chuoi2
    add byte [rcx], 48
    mov rdx, 0
